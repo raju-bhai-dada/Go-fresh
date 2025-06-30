@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | GO FRESH</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Add these styles for animations */
+    .slide-left, .slide-right {
+      opacity: 0;
+      transition: all 0.8s ease-out;
+    }
+    
+    .slide-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    .slide-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    .feature {
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.5s ease-out;
+    }
+    
+    .feature.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .hover-zoom {
+      transition: transform 0.3s ease;
+    }
+    
+    .hover-zoom:hover {
+      transform: scale(1.05);
+    }
+    
+    .cta-button {
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    .learn-more i {
+      transition: transform 0.3s ease;
+    }
+    
+    .learn-more:hover i {
+      transform: translateX(5px);
+    }
+  </style>
+</head>
+<body class="home">
+
+  <!-- Navigation -->
+  <nav class="luxury-nav">
+    <div class="nav-container">
+      <h1 class="logo">GO FRESH</h1>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="luxury-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Fresh. Trusted. Everywhere in Dubai.</h2>
+      <p>Supplying eggs to 100+ shops with unmatched quality.</p>
+      <a href="product.html" class="cta-button">Explore Our Products</a>
+    </div>
+  </header>
+
+  <!-- Luxury Sections -->
+  <main class="luxury-main">
+    <!-- Section 1 -->
+    <section class="luxury-section slide-left">
+      <div class="section-image">
+        <div class="image-frame">
+          <img src="images/egg.png" alt="Premium Eggs" class="hover-zoom">
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="content-wrapper">
+          <span class="section-subtitle">Excellence Defined</span>
+          <h2><span class="highlight">Premium</span> Brands</h2>
+          <div class="divider"></div>
+          <p class="elegant-text">
+            Kanza offers premium freshness for quality seekers, while Miya provides excellent value without compromising quality. Trusted by households across the UAE.
+          </p>
+          <a href="product.html" class="learn-more">
+            <span>Discover Our Range</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="luxury-section slide-right">
+      <div class="section-content">
+        <div class="content-wrapper">
+          <span class="section-subtitle">Our Commitment</span>
+          <h2><span class="highlight">Certified</span> Safety</h2>
+          <div class="divider"></div>
+          <p class="elegant-text">
+            Our eggs are HACCP certified and sourced from the UAE's most reputable farms — including Arabian Farms, Al Ain, Al Jazeera, and KN. Quality is guaranteed.
+          </p>
+          <a href="about.html" class="learn-more">
+            <span>Our Standards</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="section-image">
+        <div class="image-frame">
+          <img src="images/raphael-ai.jpeg" alt="Certified Eggs" class="hover-zoom">
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Luxury Feature -->
+    <section class="luxury-features-container">
+      <div class="section-header">
+        <span class="section-subtitle center">Why Choose Us</span>
+        <h2 class="section-title">Unparalleled <span class="highlight">Quality</span></h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="features-container">
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Quality Assurance</h3>
+          <p>Rigorous quality checks at every stage of production</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Reliable Delivery</h3>
+          <p>Timely deliveries across Dubai and UAE</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Farm Fresh</h3>
+          <p>Direct from UAE's best farms to your table</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>GO FRESH</h3>
+        <p>Your trusted egg supplier in Dubai</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kanza & Miya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      
+      mobileMenuBtn.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+      
+      // Scroll animations
+      const animateOnScroll = function() {
+        const sections = document.querySelectorAll('.slide-left, .slide-right');
+        const features = document.querySelectorAll('.feature');
+        
+        sections.forEach(section => {
+          const sectionPosition = section.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if (sectionPosition < screenPosition) {
+            section.classList.add('active');
+          }
+        });
+        
+        features.forEach((feature, index) => {
+          const featurePosition = feature.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if (featurePosition < screenPosition) {
+            // Stagger the animations with a delay
+            setTimeout(() => {
+              feature.classList.add('active');
+            }, index * 200);
+          }
+        });
+      };
+      
+      // Run once on page load
+      animateOnScroll();
+      
+      // Then run on scroll
+      window.addEventListener('scroll', animateOnScroll);
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 100,
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            navLinks.classList.remove('active');
+          }
+        });
+      });
+      
+      // Active link highlighting
+      const navLinksAll = document.querySelectorAll('.nav-links a');
+      
+      window.addEventListener('scroll', function() {
+        const fromTop = window.scrollY + 100;
+        
+        navLinksAll.forEach(link => {
+          const section = document.querySelector(link.getAttribute('href'));
+          
+          if (
+            section &&
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 
